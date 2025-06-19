@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.Rendering;
 
 namespace Autohand
 {
@@ -56,40 +57,46 @@ namespace Autohand
         float lineSegements = 10f;
 
         bool beingDestroyed = false;
-        static Camera cam = null;
-        public static Camera UICamera
-        {
-            get
-            {
-                if (cam == null)
-                {
-                    cam = new GameObject("Camera Canvas Pointer (I AM CREATED AT RUNTIME FOR UI CANVAS INTERACTION, I AM NOT RENDERING ANYTHING, I AM NOT CREATING ADDITIONAL OVERHEAD)").AddComponent<Camera>();
-                    cam.clearFlags = CameraClearFlags.Nothing;
-                    cam.stereoTargetEye = StereoTargetEyeMask.None;
-                    cam.orthographic = true;
-                    cam.orthographicSize = 0.001f;
-                    cam.cullingMask = 0;
-                    cam.nearClipPlane = 0.001f;
-                    cam.depth = 0f;
-                    cam.allowHDR = false;
-                    cam.enabled = false;
-                    cam.fieldOfView = 0.00001f;
-                    cam.transform.parent = AutoHandExtensions.transformParent;
+private static Camera cam = null;
+public static Camera UICamera {
+    get {
+        if (cam == null) {
+            cam = new GameObject(
+                "Camera Canvas Pointer (I AM CREATED AT RUNTIME FOR UI CANVAS INTERACTION, I AM NOT RENDERING ANYTHING, I AM NOT CREATING ADDITIONAL OVERHEAD)"
+            ).AddComponent<Camera>();
+            cam.clearFlags = CameraClearFlags.Nothing;
 
-#if (UNITY_2020_3_OR_NEWER)
-                    var canvases = AutoHandExtensions.CanFindObjectsOfType<Canvas>(true);
+#if UNITY_2019_3_OR_NEWER
+            // only set stereoTargetEye when the built-in RP is active
+            if (UnityEngine.Rendering.GraphicsSettings.defaultRenderPipeline == null)
+                cam.stereoTargetEye = StereoTargetEyeMask.None;
 #else
-                    var canvases = FindObjectsOfType<Canvas>();
+            cam.stereoTargetEye = StereoTargetEyeMask.None;
 #endif
-                    foreach(var canvas in canvases) {
-                        if(canvas.renderMode == RenderMode.WorldSpace)
-                            canvas.worldCamera = cam;
-                    }
 
-                }
-                return cam;
+            cam.orthographic        = true;
+            cam.orthographicSize    = 0.001f;
+            cam.cullingMask         = 0;
+            cam.nearClipPlane       = 0.001f;
+            cam.depth               = 0f;
+            cam.allowHDR            = false;
+            cam.enabled             = false;
+            cam.fieldOfView         = 0.00001f;
+            cam.transform.parent    = AutoHandExtensions.transformParent;
+
+#if UNITY_2020_3_OR_NEWER
+            var canvases = AutoHandExtensions.CanFindObjectsOfType<Canvas>(true);
+#else
+            var canvases = FindObjectsOfType<Canvas>();
+#endif
+            foreach (var canvas in canvases) {
+                if (canvas.renderMode == RenderMode.WorldSpace)
+                    canvas.worldCamera = cam;
             }
         }
+        return cam;
+    }
+}
         int pointerIndex;
 
         protected virtual void OnEnable()
