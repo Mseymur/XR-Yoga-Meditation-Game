@@ -9,8 +9,23 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/AuraVibes/Scenes/Beach 360.unity
+    guid: 25c4800c016c2b14193e9f55500883c3
+  - enabled: 1
     path: Assets/AutoHand/Examples/Scenes/MetaXR/Demo.unity
     guid: 596ea3599ae73c840a43a7b422b50650
+  - enabled: 1
+    path: Assets/AuraVibes/Scenes/Snowy Moutain 360.unity
+    guid: a51a2a75639a99a4ca01ce18aaff5765
+  - enabled: 1
+    path: Assets/AuraVibes/Scenes/Space 360.unity
+    guid: 52199084c5998ba45a011d697fc0b6f2
+  - enabled: 1
+    path: Assets/AuraVibes/Scenes/Moutain 360.unity
+    guid: 7019952bbdf04c1489e568a6864361ed
+  - enabled: 1
+    path: Assets/Scenes/Experiment.unity
+    guid: a74452ea5acbee94890cff8acb76dcde
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7fe1ac5c639d84a6d85f8a09e090e4d3, type: 2}
