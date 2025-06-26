@@ -26,7 +26,10 @@ public class TimelineRewindController : MonoBehaviour
         }
         FindMarkerTimes();
     }
-
+    void Start()
+{
+    director.Play();
+}
     void FindMarkerTimes()
     {
         var timelineAsset = director.playableAsset as TimelineAsset;
