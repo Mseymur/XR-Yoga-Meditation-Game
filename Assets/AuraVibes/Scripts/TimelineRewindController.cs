@@ -58,7 +58,7 @@ public class TimelineRewindController : MonoBehaviour
 
         // menu
         if (OVRInput.GetDown(menuButton))
-            SceneManager.LoadScene("Level Scene");
+            SceneManager.LoadScene("Nature");
 
         // countdown
         UpdateCountdownUI();
