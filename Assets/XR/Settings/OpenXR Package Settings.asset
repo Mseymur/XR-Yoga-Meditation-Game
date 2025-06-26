@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: MetaHandTrackingAim Standalone
   m_EditorClassIdentifier: 
   m_enabled: 0
-  <failedInitialization>k__BackingField: 0
   nameUi: Meta Hand Tracking Aim
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.metahandtrackingaim
@@ -54,7 +53,6 @@ MonoBehaviour:
   m_Name: MetaHandTrackingAim Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  <failedInitialization>k__BackingField: 0
   nameUi: Meta Hand Tracking Aim
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.metahandtrackingaim
@@ -184,6 +182,7 @@ MonoBehaviour:
   - {fileID: -3693650627150529893}
   - {fileID: -6003722802461271498}
   - {fileID: -1154412011532149309}
+  - {fileID: -9025469400770967875}
   - {fileID: -7087258781478790666}
   - {fileID: -7538330989967534508}
   - {fileID: -2817522737038182269}
@@ -198,6 +197,7 @@ MonoBehaviour:
   - {fileID: 1244951917298047316}
   - {fileID: 5372687720947109642}
   - {fileID: -1995660458539422140}
+  - {fileID: 9174057562049940038}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -781,7 +781,6 @@ MonoBehaviour:
   m_Name: HandTracking Android
   m_EditorClassIdentifier: 
   m_enabled: 0
-  <failedInitialization>k__BackingField: 0
   nameUi: Hand Tracking Subsystem
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.handtracking
@@ -789,7 +788,6 @@ MonoBehaviour:
   company: Unity
   priority: -100
   required: 0
-  m_ShouldBeRunning: 0
 --- !u!114 &2243680745804229392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -953,6 +951,7 @@ MonoBehaviour:
   - {fileID: 852319847236733524}
   - {fileID: 3007383577833591555}
   - {fileID: 8683006508354912326}
+  - {fileID: -8224701787520201584}
   - {fileID: -1668041718213362253}
   - {fileID: -3972995855395318248}
   - {fileID: -3347254970521098598}
@@ -968,6 +967,7 @@ MonoBehaviour:
   - {fileID: 5275095449107043655}
   - {fileID: 6878119624073010710}
   - {fileID: -5431845735050954519}
+  - {fileID: 1887167212496252402}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -1199,7 +1199,6 @@ MonoBehaviour:
   m_Name: HandTracking Standalone
   m_EditorClassIdentifier: 
   m_enabled: 0
-  <failedInitialization>k__BackingField: 0
   nameUi: Hand Tracking Subsystem
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.handtracking
@@ -1207,4 +1206,3 @@ MonoBehaviour:
   company: Unity
   priority: -100
   required: 0
-  m_ShouldBeRunning: 0
