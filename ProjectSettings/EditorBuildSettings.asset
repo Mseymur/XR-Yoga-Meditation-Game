@@ -27,7 +27,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Experiment.unity
     guid: a74452ea5acbee94890cff8acb76dcde
   m_configObjects:
+
     UnityEditor.XR.VisionOS.VisionOSSettings: {fileID: 11400000, guid: c7e4e25baed4f444b84fd10d365fa152, type: 2}
+
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 769e7e8aaddfa4777bac243b0f65affa, type: 2}
+
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.polyspatial.xr.xr_settings: {fileID: 11400000, guid: 98ae554d094dbf04e87829e316b0176e, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 9a66a5fe3bca484409bd2666544cadff, type: 2}
