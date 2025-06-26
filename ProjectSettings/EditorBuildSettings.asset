@@ -13,7 +13,10 @@ EditorBuildSettings:
     guid: b7cce810e9bf143a58531e7be19e4e4c
   - enabled: 1
     path: Assets/AuraVibes/Scenes/Yoga_Main.unity
-    guid: 25c4800c016c2b14193e9f55500883c3
+    guid: 41b71c959d6634c27a078d0c08ed5ae1
+  - enabled: 1
+    path: Assets/AuraVibes/Scenes/Meditation.unity
+    guid: 2a808cc4586cb4d949076bb130cda93a
   m_configObjects:
     UnityEditor.XR.VisionOS.VisionOSSettings: {fileID: 11400000, guid: c7e4e25baed4f444b84fd10d365fa152, type: 2}
     com.unity.polyspatial.xr.xr_settings: {fileID: 11400000, guid: 98ae554d094dbf04e87829e316b0176e, type: 2}
