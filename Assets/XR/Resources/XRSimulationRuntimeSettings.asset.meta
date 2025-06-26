@@ -1,6 +1,11 @@
 fileFormatVersion: 2
-guid: 14f7496ad688bf748841a74409a5e339
+<<<<<<<< HEAD:Assets/AuraVibes/Scenes/1st Scene.unity.meta
+guid: ccc5cd3efb62a4b37848405c49b48763
+DefaultImporter:
+========
+guid: 9f2c90b62d4af4709a5a6a9fad4c743e
 NativeFormatImporter:
+>>>>>>>> 96a61cb679a1016100de353e212dbdeb8cfb5402:Assets/XR/Resources/XRSimulationRuntimeSettings.asset.meta
   externalObjects: {}
   mainObjectFileID: 11400000
   userData: 
