@@ -9,12 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/AuraVibes/Scenes/New Scnee.unity
+    guid: d06909fd35a2b4a3582dd5b24deea144
+  - enabled: 0
     path: Assets/AuraVibes/Scenes/Level Scene.unity
     guid: 44b850e9b673a4dd1bf61e4fc122734e
-  - enabled: 1
+  - enabled: 0
     path: Assets/AuraVibes/Scenes/Start Scene.unity
     guid: 50dd655e72d304326bd48fa5e12af5c0
-  - enabled: 1
+  - enabled: 0
     path: Assets/AuraVibes/Scenes/Yoga_Main.unity
     guid: 25c4800c016c2b14193e9f55500883c3
   - enabled: 0
