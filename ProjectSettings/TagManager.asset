@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - QDSUIBackplateGradient
+  - QDSUISecondaryButton
+  - QDSUIPrimaryButton
+  - QDSUISharedThemeColor
+  - QDSUIAccentColor
+  - QDSUITextInvertedColor
+  - QDSUIIcon
+  - QDSUITextSecondaryInvertedColor
   layers:
   - Default
   - TransparentFX
@@ -34,7 +42,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - OVROverlayCanvas Rendering
   - XR Simulation
   - PolySpatial
   m_SortingLayers:

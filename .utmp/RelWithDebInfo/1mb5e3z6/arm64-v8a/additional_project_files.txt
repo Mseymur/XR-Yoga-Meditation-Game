@@ -1,0 +1,17 @@
+/Users/mseymur/Documents/GitHub/XR-Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/GAToUnityCallbacks.h
+/Users/mseymur/Documents/GitHub/XR-Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroEnd.h
+/Users/mseymur/Documents/GitHub/XR-Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroHeaderBegin.h
+/Users/mseymur/Documents/GitHub/XR-Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroSourceBegin.h
+/Users/mseymur/Documents/GitHub/XR-Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAApplication.h
+/Users/mseymur/Documents/GitHub/XR-Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAConfiguration.h
+/Users/mseymur/Documents/GitHub/XR-Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGADebug.h
+/Users/mseymur/Documents/GitHub/XR-Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAEvents.h
+/Users/mseymur/Documents/GitHub/XR-Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAInput.h
+/Users/mseymur/Documents/GitHub/XR-Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGASoftKeyboard.h
+/Users/mseymur/Documents/GitHub/XR-Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGASoftKeyboardCallbacks.h
+/Users/mseymur/Documents/GitHub/XR-Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGATypes.h
+/Users/mseymur/Documents/GitHub/XR-Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAVersion.h
+/Users/mseymur/Documents/GitHub/XR-Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGACallbacks.h
+/Users/mseymur/Documents/GitHub/XR-Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAConfigurationCallbacks.h
+/Users/mseymur/Documents/GitHub/XR-Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAKeyEventCallbacks.h
+/Users/mseymur/Documents/GitHub/XR-Game/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAMotionEventCallbacks.h

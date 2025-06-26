@@ -20,16 +20,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/AutoHand/Examples/Scenes/MetaXR/Demo.unity
     guid: 596ea3599ae73c840a43a7b422b50650
-  - enabled: 1
+  - enabled: 0
     path: Assets/AuraVibes/Scenes/Snowy Moutain 360.unity
     guid: a51a2a75639a99a4ca01ce18aaff5765
-  - enabled: 1
+  - enabled: 0
     path: Assets/AuraVibes/Scenes/Space 360.unity
     guid: 52199084c5998ba45a011d697fc0b6f2
-  - enabled: 1
+  - enabled: 0
     path: Assets/AuraVibes/Scenes/Moutain 360.unity
     guid: 7019952bbdf04c1489e568a6864361ed
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Experiment.unity
     guid: a74452ea5acbee94890cff8acb76dcde
   m_configObjects:
