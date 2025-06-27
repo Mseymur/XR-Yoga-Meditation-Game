@@ -19,6 +19,7 @@ public class MeditationTimeline : MonoBehaviour
     // Internal timer state
     private float timeRemainingInSeconds;
     private bool isTimerRunning = false;
+    private OVRInput.Button menuButton = OVRInput.Button.One;   // 'A'
 
     void Start()
     {
@@ -55,6 +56,9 @@ public class MeditationTimeline : MonoBehaviour
                 OnTimerEnd();
             }
         }
+                // menu
+        if (OVRInput.GetDown(menuButton))
+            SceneManager.LoadScene("Nature");
     }
 
     private void UpdateCountdownUI()
