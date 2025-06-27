@@ -32,7 +32,7 @@ public class AudioTrackController : MonoBehaviour
         }
 
         if (audioSourceBinding == null)
-            Debug.LogWarning($"Couldn't find AudioSource binding for track '{audioTrackName}'");
+            Debug.LogWarning($"Couldn't find AudioSource binding for track '{Beach}'");
     }
 
     /// <summary>
