@@ -1,18 +1,18 @@
-# **XR-Game — VR Yoga & Meditation for Meta Quest 3**
+# AuraVibes 🧘‍♀️✨
+### *AR for orientation, VR for depth.*
 
-A calm, guided VR experience for Meta Quest 3 that teaches foundational yoga poses and offers a meditative space with ambient soundscapes. Built in Unity as part of a university course on VR/AR app development, the project emphasizes comfort-first UX, clear guidance, and robust controller navigation to keep users focused and relaxed—even when VR input gets finicky.
+![Unity](https://img.shields.io/badge/Unity-2022.3%2B-black?style=for-the-badge&logo=unity)
+![Meta Quest](https://img.shields.io/badge/Meta%20Quest-VR%20%2F%20MR-blue?style=for-the-badge&logo=meta)
+![XR Interaction Toolkit](https://img.shields.io/badge/XR%20Interaction-Toolkit-crimson?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-Android%20%28Quest%29-lightgrey?style=for-the-badge&logo=android)
 
-## **✨ What’s inside**
+**AuraVibes** is a seamless Mixed Reality (MR) application designed to bridge the gap between your physical environment and a serene virtual escape. 
 
-- **Beginner Yoga Class** (current) with a paced sequence of poses and a 3D instructor/character
-- **Guided Meditation Room** with spatial/ambient audio for relaxation
-- **Environment Selector** (e.g., multiple themed maps/biomes)
-- **Controller-friendly UI** (world-space menus; “go back / replay step” affordances; joystick-safe navigation)
-- **Future tiers** (planned): Intermediate & Advanced classes, more environments, additional guidance
+By starting in **Augmented Reality (AR)**, users can comfortably orient themselves, place their yoga mat, and configure their session before transitioning into a fully immersive **Virtual Reality (VR)** environment for deep focus and relaxation.
 
----
+> **Project Goal:** To create a distraction-free, "comfort-first" XR experience that teaches foundational yoga poses and offers a meditative space with ambient soundscapes.
 
-## **🎯 Goals**
+## 🎯 Core Goals
 
 1. Deliver a **peaceful, distraction-free practice** space in VR.
 2. Make sessions **easy to follow**: clear visuals, replay/previous controls, readable UI in VR.
@@ -20,71 +20,106 @@ A calm, guided VR experience for Meta Quest 3 that teaches foundational yoga pos
 
 ---
 
-## **🧭 User Flow**
+## ✨ Key Features
 
-1. **Landing / Profile** → pick **Beginner** (Intermediate/Advanced planned).
-2. **Environment** → choose a setting.
-3. **Session Controls** → Start / Pause, **Previous / Next pose**, and **Replay current step**.
-4. **Guided Meditation** → optional room to wind down.
+*   **Seamless XR Transition:** Begin in your living room with Passthrough AR to set up your space, then dissolve into a high-altitude mountain lake for your practice.
+*   **Virtual Instructor:** Follow a 3D avatar instructor with rigged animations for clear, visual pose guidance.
+*   **Guided Breathing:** Audio-visual cues help synchronize your breath with your movements.
+*   **Custom Environments:** Choose from multiple calm settings (currently featuring "Serene Lake" and "Dojo").
+*   **Fail-Safe UI:** World-space menus designed for VR comfort, featuring "Go Back" and "Replay Step" options to prevent frustration.
 
----
+## 🛠️ Tech Stack
 
----
-
-## **🧪 UX decisions (comfort & clarity)**
-
-- **Simple, legible world-space UI**: large hit-targets, readable at VR distances.
-- **Session safety nets**: **Back** and **Replay step** are always available (users can recover after input hiccups).
-- **Ambient soundscapes**: minimal but effective; encourages breathing & focus.
-- **Fail-soft navigation**: joystick-friendly flows; no precision aiming required to proceed.
-
----
-
-## **🧱 Development Process**
-
-1. **Foundations** — created a Quest-ready Unity project, XR setup, controller input.
-2. **Environment Pass** — blocked out maps, basic lighting, performance budgets.
-3. **Character & Poses** — rig setup, pose states/animations, timing for guidance.
-4. **UI** — world-space interface, session controls, accessible nav patterns.
-5. **Audio** — ambient loops; volume controls; fade in/out between scenes.
-6. **Polish** — iterate on timing, readability, and comfort settings.
+*   **Engine:** Unity 2022.3 LTS
+*   **XR Framework:** OpenXR + Meta XR Core SDK
+*   **Interaction:** XR Interaction Toolkit (XRI)
+*   **Animation:** Mixamo + Custom Retargeting
+*   **Design Tools:** Figma (UI/UX)
+*   **AI Assistants:** ChatGPT (Coding support)
 
 ---
 
-## **🐛 Challenges & Lessons Learned (technical)**
+## � UX Decisions (Comfort & Clarity)
 
-> These are common in Unity XR/Quest development and came up during the course. Use/modify to match your exact issues.
-> 
-- **SDK fragmentation / package drift**
-    - OpenXR vs. legacy Oculus Integration differences; feature sets don’t map 1:1.
-    - **Symptom:** input actions or controller models randomly break after package updates.
-    - **Mitigation:** lock package versions; prefer one XR path (OpenXR + Meta feature group); keep a “known-good” manifest.
-- **Controller input edge cases**
-    - UI ray vs. direct interactors, hover/click focus conflicts, and canvas physics settings.
-    - **Mitigation:** explicit UI input module config; consistent action maps; simplified canvases.
-- **Android/Gradle/IL2CPP pipeline**
-    - Misaligned SDK/NDK/Gradle versions causing build failures; long IL2CPP times.
-    - **Mitigation:** pin Editor + Android tools; cache builds; keep Player Settings minimal.
-- **Performance on device**
-    - Overdraw from UI, unbaked lighting on mobile, too many real-time lights/shadows.
-    - **Mitigation:** baked lighting where possible, reduce transparent materials, occlusion culling, ASTC compression.
-- **In-editor vs on-device behavior**
-    - Input and audio mixing felt different on headset; some errors only reproduced on device.
-    - **Mitigation:** frequent device testing; small repro scenes.
-- **Ecosystem incoherence**
-    - Docs/samples assume different combinations of packages; tutorials quickly go stale.
-    - **Mitigation:** minimal stack; document working versions in the repo; create a troubleshooting log.
+*   **Simple, legible world-space UI:** Large hit-targets, readable at VR distances.
+*   **Session safety nets:** **Back** and **Replay step** are always available (users can recover after input hiccups).
+*   **Ambient soundscapes:** Minimal but effective; encourages breathing & focus.
+*   **Fail-soft navigation:** Joystick-friendly flows; no precision aiming required to proceed.
+
+## 🧱 Development Process
+
+1.  **Foundations**: Created a Quest-ready Unity project, XR setup, controller input.
+2.  **Environment Pass**: Blocked out maps, basic lighting, performance budgets.
+3.  **Character & Poses**: Rig setup, pose states/animations, timing for guidance.
+4.  **UI**: World-space interface, session controls, accessible nav patterns.
+5.  **Audio**: Ambient loops; volume controls; fade in/out between scenes.
+6.  **Polish**: Iterate on timing, readability, and comfort settings.
 
 ---
 
-## **📈 What’s implemented vs. Roadmap**
+## 🚀 Getting Started
 
-- ✅ **Beginner Yoga Class**
-- ✅ **Environment selection**
-- ✅ **Guided meditation room**
-- ✅ **Core UI & navigation**
-- ◻️ Intermediate & Advanced classes (content & sequencing)
-- ◻️ More environments & ambiance sets
-- ◻️ Expanded guidance (voice-over captions, pose safety notes)
-- ◻️ Basic analytics (session duration, completions) for research evaluation
-- ◻️ Comfort & accessibility options (dominant hand toggle, larger UI preset)
+### Prerequisites
+
+*   Meta Quest 2, 3, or Pro
+*   Unity Hub with Android Build Support (OpenJDK & Android SDK/NDK)
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Mseymur/XR-Yoga-Meditation-Game.git
+    ```
+2.  **Open in Unity:**
+    *   Add the project to Unity Hub.
+    *   Open the project (wait for package resolution).
+3.  **Build & Run:**
+    *   Connect your Quest via USB.
+    *   Go to **File > Build Settings**, select **Android**, and click **Build and Run**.
+
+---
+
+## 🐛 Challenges & Lessons Learned (Technical)
+
+> Common issues encountered during Unity XR/Quest development.
+
+*   **SDK Fragmentation / Package Drift**
+    *   *Issue:* OpenXR vs. legacy Oculus Integration differences; feature sets don’t map 1:1.
+    *   *Mitigation:* Lock package versions; prefer one XR path (OpenXR + Meta feature group); keep a “known-good” manifest.
+*   **Controller Input Edge Cases**
+    *   *Issue:* UI ray vs. direct interactors, hover/click focus conflicts, and canvas physics settings.
+    *   *Mitigation:* Explicit UI input module config; consistent action maps; simplified canvases.
+*   **Android/Gradle/IL2CPP Pipeline**
+    *   *Issue:* Misaligned SDK/NDK/Gradle versions causing build failures; long IL2CPP times.
+    *   *Mitigation:* Pin Editor + Android tools; cache builds; keep Player Settings minimal.
+*   **Performance on Device**
+    *   *Issue:* Overdraw from UI, unbaked lighting on mobile, too many real-time lights/shadows.
+    *   *Mitigation:* Baked lighting where possible, reduce transparent materials, occlusion culling, ASTC compression.
+
+## 📈 Roadmap
+
+- [x] **Beginner Yoga Class**
+- [x] **Environment selection**
+- [x] **Guided meditation room**
+- [x] **Core UI & navigation**
+- [ ] Intermediate & Advanced classes (content & sequencing)
+- [ ] More environments & ambiance sets
+- [ ] Expanded guidance (voice-over captions, pose safety notes)
+- [ ] Basic analytics (session duration, completions) for research evaluation
+
+---
+
+## 👥 The Team
+
+*   **Seymur Mammadov** - Developer & Engineering
+*   **Sara Waldenberger** - UI/UX
+*   **Dorota Bičárová** - Environments
+*   **Eliška Zemanská** - Documentation
+
+## 📄 License
+
+This project is intended for educational and portfolio purposes.
+
+---
+
+*[Learn more about the development of AuraVibes.](https://mseymur.framer.website/projects/ar-vr-meditation-app)*
