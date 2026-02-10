@@ -118,7 +118,7 @@ By starting in **Augmented Reality (AR)**, users can comfortably orient themselv
 
 ## 📄 License
 
-This project is intended for educational and portfolio purposes.
+[License](license)
 
 ---
 
